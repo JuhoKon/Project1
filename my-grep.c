@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
     exit(1);
   }
   if (argc == 2) { /*jos 2 argumenttia,halutaan lukea terminaalia */
-    while(fgets(c,MAXBUFFER-1,stdin)!=NULL) { /*lukee rivit, jotka ovat alle 480 kokoisia */ 
+    while(fgets(c,MAXBUFFER-1,stdin)!=NULL) { /*lukee rivit, jotka ovat alle MAXBUFFERin kokoisia */ 
       if (strstr(c,argv[1])) {	/*strstr-funktiolla verrataan merkkijonoja keskenään ja printataan kyseinen merkkijono uudestaan jos vastaava löytyy */
 	printf("%s",c);								
       }
@@ -37,7 +37,7 @@ int grep(char *key,char *argv) {
    exit(1);
   }
   printf("Filename:%s \n",argv);
-  while(fgets(c,MAXBUFFER,fp)!=NULL) { /*lukee rivit, jotka ovat alle 480 kokoisia */
+  while(fgets(c,MAXBUFFER,fp)!=NULL) { /*lukee rivit, jotka ovat alle MAXBUFFERin kokoisia */ 
     if (strstr(c,key)) {
     printf("%s",c);
     }
