@@ -25,7 +25,6 @@ int main(int argc, char *argv[]) {
   }
   
   for (i=2;i<argc;++i) { /*käydään parametrit läpi */
-    printf("%s\n",argv[i]);
     grep(argv[1],argv[i]); /*annetaan grep-funktiolle tiedostonimi sekä etsittävä avainsana */
   }
   return 0;
@@ -37,8 +36,8 @@ int grep(char *key,char *argv) {
    printf("my-grep: cannot open file\n");
    exit(1);
   }
+  printf("Filename:%s \n",argv);
   while(fgets(c,MAXBUFFER,fp)!=NULL) { /*lukee rivit, jotka ovat alle 480 kokoisia */
-    printf("%s",c);
     if (strstr(c,key)) {
     printf("%s",c);
     }
