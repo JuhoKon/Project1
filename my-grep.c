@@ -1,3 +1,7 @@
+/* my-grep -ohjelma */
+/* Tekijät: Juho Kontiainen 0503209 */
+/*          Jesse Peltola           */
+/* Lähteet: stackoverflow           */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
