@@ -5,15 +5,23 @@
 
 #include <stdio.h>
 #include <stdlib.h>
- 
+int cat(char *);
+
 int main(int argc, char *argv[]) {
-  char c;
+  int i;
   if (argc <= 1) { /*Ei argumentteja */
     return 1;
   }
-  FILE *fp = fopen(argv[1], "r"); 
+  for (i=1; i<argc; ++i) { /*käydään muut annetut parametrit läpi */
+    cat(argv[i]);
+  }
+  return 0;
+}
+int cat(char *argv) {
+  char c;
+  FILE *fp = fopen(argv, "r"); 
   if (fp == NULL) { 
-   printf("cannot open file\n");
+   printf("my-cat: cannot open file\n");
    exit(1);
   }
 
@@ -23,5 +31,6 @@ int main(int argc, char *argv[]) {
     c = fgetc(fp);
   }
   fclose(fp);
+
   return 0;
 }
