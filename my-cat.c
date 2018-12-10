@@ -1,6 +1,6 @@
 /* my-cat -ohjelma */
 /* Tekijät: Juho Kontiainen 0503209 */
-/*          Jesse Peltola           */
+/*          Jesse Peltola   0523140 */
 /* Lähteet: stackoverflow           */
 
 #include <stdio.h>
