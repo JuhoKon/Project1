@@ -36,7 +36,7 @@ int grep(char *key,char *argv) {
    printf("my-grep: cannot open file\n");
    exit(1);
   }
-  printf("Filename:%s \n",argv);
+
   while(fgets(c,MAXBUFFER,fp)!=NULL) { /*lukee rivit, jotka ovat alle MAXBUFFERin kokoisia */ 
     if (strstr(c,key)) {
     printf("%s",c);
