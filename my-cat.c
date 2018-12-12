@@ -1,7 +1,7 @@
 /* my-cat -ohjelma */
 /* Tekijät: Juho Kontiainen 0503209 */
 /*          Jesse Peltola   0523140  */
-/* Lähteet: stackoverflow           */
+/* Lähteet: stackoverflow,https://www.tutorialspoint.com/c_standard_library/c_function_fopen.htm  */
 
 #include <stdio.h>
 #include <stdlib.h>
