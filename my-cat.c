@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 }
 int cat(char *argv) {
   char c;
-  FILE *fp = fopen(argv, "r"); 
+  FILE *fp = fopen(argv, "r");  /*https://www.tutorialspoint.com/c_standard_library/c_function_fopen.htm */
   if (fp == NULL) { 
    printf("my-cat: cannot open file\n");
    exit(1);
