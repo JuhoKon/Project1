@@ -1,7 +1,7 @@
 /* my-grep -ohjelma */
 /* Tekijät: Juho Kontiainen 0503209 */
 /*          Jesse Peltola   0523140 */
-/* Lähteet: stackoverflow           */
+/* Lähteet: stackoverflow, fgets-toiminta https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
